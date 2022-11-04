@@ -4,7 +4,7 @@
   "description": "A Sequelize DB for users to collect cheeses and place them on boards",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll",
+    "test": "jest --runInBand",
     "seed": "cd db && node seed.js",
     "main": "cd src && node main.js"
   },
@@ -15,6 +15,7 @@
   "keywords": [],
   "author": "Multiverse Learning Products",
   "dependencies": {
+    "jest": "^29.2.2",
     "sequelize": "^6.25.3",
     "sqlite3": "^5.1.2"
   }
