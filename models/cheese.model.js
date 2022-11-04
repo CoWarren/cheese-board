@@ -1,14 +1,14 @@
-const { Datatypes, Model } = require('sequelize')
+const { DataTypes, Model } = require('sequelize')
 const db = require('../db/db') 
 
 class Cheese extends Model{}
 
 Cheese.init({
   title: {
-    type: Datatypes.STRING
+    type: DataTypes.STRING
   },
   description: {
-    type: Datatypes.STRING
+    type: DataTypes.STRING
   }
 },{sequelize: db})
 
